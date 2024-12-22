@@ -137,6 +137,12 @@ body {
     display: grid;
 }
 
+.testimonial .quote {
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 19%;
+}
+
 .testimonial-grid {
     display: grid;
     gap: 2rem;
@@ -144,7 +150,7 @@ body {
     margin-inline: auto;
     padding-block: 2rem;
     grid-auto-columns: 1fr;
-    
+
 
     grid-template-areas:
         "one"
@@ -173,23 +179,26 @@ body {
 .testimonial:nth-child(5) {
     grid-area: five;
 }
+
 @media (min-width: 35em) {
     .testimonial-grid {
-        grid-template-areas: 
-        "one one"
-        "two three"
-        "four four"
-        "five five";
+        grid-template-areas:
+            "one one"
+            "two three"
+            "four four"
+            "five five";
     }
 }
+
 @media (min-width: 48em) {
     .testimonial-grid {
-        grid-template-areas: 
-        "one one two"
-        "five five five"
-        "three four four";
+        grid-template-areas:
+            "one one two"
+            "five five five"
+            "three four four";
     }
 }
+
 @media (min-width: 70em) {
     .testimonial-grid {
         grid-template-areas:
